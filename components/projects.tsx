@@ -21,6 +21,7 @@ import CineSuggest from "../assets/projects/CineSuggest.png"
 import AI_TIC_TAC_TOE from "../assets/projects/AI_Integerated_TicTacToe.png"
 import Technoverse from "../assets/projects/Technoverse.png"
 import DeepLearningAIClone from "../assets/projects/DeepLearningAi.png"
+import RasterAI from "../assets/projects/RasterAi.png"
 import { title } from "process"
 import { id } from "date-fns/locale"
 import { Livvic } from "next/font/google"
@@ -29,6 +30,41 @@ import { Livvic } from "next/font/google"
 const projects = [
   {
     id: 1,
+    title: "Raster AI",
+    description:
+      "An AI-powered UI/UX mockup generator that transforms text prompts into interactive web and mobile interface designs.",
+    longDescription:
+      "Developed Raster AI, a full-stack AI-powered UI/UX mockup generator that converts natural language prompts into multi-screen web and mobile interface designs. Built using Next.js 16 and React 19, the platform integrates AI models via OpenRouter to generate structured screen configurations followed by production-ready HTML and Tailwind CSS code. The application features an interactive design canvas with drag, resize, zoom, and theme-switching capabilities. It also includes secure authentication using Clerk, a serverless PostgreSQL database with Neon and Drizzle ORM, and deployment on Vercel. Raster AI is designed as a free, student-focused tool with future plans for premium AI model integration and Figma support.",
+    image: RasterAI, 
+    technologies: [
+      "Next.js 16",
+      "React 19",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Neon PostgreSQL",
+      "Drizzle ORM",
+      "Clerk Authentication",
+      "OpenRouter API",
+      "Vercel"
+    ],
+    category: "Web",
+    status: "Completed",
+    liveUrl: "https://raster-ai.vercel.app",
+    githubUrl: "",
+    features: [
+      "AI-based UI/UX generation from natural language prompts",
+      "Automatic multi-screen layout creation (Login, Dashboard, etc.)",
+      "Interactive canvas with drag, resize, and zoom",
+      "Theme switching and visual customization",
+      "Regenerate and refine individual screens using AI",
+      "View and export clean HTML + Tailwind CSS code",
+      "Download mockups as PNG images",
+      "Secure authentication and project management system"
+    ]
+
+  },
+  {
+    id: 2,
     title: "Glitchify – AI-Powered Image Editor & Glitch Art Generator",
     description:
       "A creative platform for image editing and glitch effects.",
@@ -47,9 +83,9 @@ const projects = [
       "✂️ Segmentation Tools – Enabling selective glitching of specific regions of an image.",
     ],
   },
-  
+
   {
-    id: 2,
+    id: 3,
     title: "Eye-Controlled Mouse",
     description:
       "An innovative application that enables users to control mouse movements and clicks using eye-tracking technology.",
@@ -71,7 +107,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Deep Learning-Powered Football Match Analysis",
     description:
       "A comprehensive football match analysis system using deep learning for player tracking, event detection, and performance metrics.",
@@ -93,7 +129,7 @@ const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Gesture-Controlled Dino Game",
     description:
       "A fun and interactive game where players control the dinosaur using hand gestures detected via webcam and OpenCV.",
@@ -115,7 +151,7 @@ const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "The COVID-19 Data Lab - A Dynamic Power BI Dashboard",
     description: "A comprehensive Power BI dashboard for tracking and analyzing COVID-19 data globally.",
     longDescription:
@@ -136,7 +172,7 @@ const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "US SuperStore Insights - Power BI Dashboard",
     description:
       "A detailed Power BI dashboard analyzing sales, profit, and most sold products and customer data for a US SuperStore dataset.",
@@ -158,7 +194,7 @@ const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Data Science Salary Analysis",
     description:
       "A Python project analyzing data science salaries across different roles, locations, and experience levels using data visualization libraries.",
@@ -180,7 +216,7 @@ const projects = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "CineSuggest - Movie Recommendation App",
     description:
       "A mobile app that provides latest movies details, trailers, and reccomendations and authorization.",
@@ -190,8 +226,8 @@ const projects = [
     technologies: ["Flutter", "Dart", "TMDB API", "Firebase"],
     category: "Mobile",
     status: "Completed",
-    liveUrl:"https://www.linkedin.com/posts/abdullah-rasheed-shiekh_flutter-moviesapp-dart-activity-7278070772282122240-wOZZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEY4BhUBvWPQL7PHg9zu8Iwko0s05P-gifg",
-    githubUrl:"https://github.com/Abdullah-Rasheed-Shiekh/Cine-Suggest.git",
+    liveUrl: "https://www.linkedin.com/posts/abdullah-rasheed-shiekh_flutter-moviesapp-dart-activity-7278070772282122240-wOZZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEY4BhUBvWPQL7PHg9zu8Iwko0s05P-gifg",
+    githubUrl: "https://github.com/Abdullah-Rasheed-Shiekh/Cine-Suggest.git",
     features: [
       "Movie discovery and exploration",
       "Integration with TMDB API for movie details and trailers",
@@ -202,7 +238,7 @@ const projects = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "AI-Integrated Tic Tac Toe Game",
     description:
       "A CLI-based Tic Tac Toe game with an AI opponent using the Minimax algorithm and Multiplayer Option as well.",
@@ -212,8 +248,8 @@ const projects = [
     technologies: ["Python", "Minimax Algorithm", "CLI"],
     category: "AI/ML",
     status: "Completed",
-    liveUrl:"https://www.linkedin.com/posts/abdullah-rasheed-shiekh_python-ai-tictactoe-activity-7235540819590430720-AiOh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEY4BhUBvWPQL7PHg9zu8Iwko0s05P-gifg",
-    githubUrl:"https://github.com/Abdullah-Rasheed-Shiekh/AI_Integerated_TIC_TAC_TOE.git",
+    liveUrl: "https://www.linkedin.com/posts/abdullah-rasheed-shiekh_python-ai-tictactoe-activity-7235540819590430720-AiOh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEY4BhUBvWPQL7PHg9zu8Iwko0s05P-gifg",
+    githubUrl: "https://github.com/Abdullah-Rasheed-Shiekh/AI_Integerated_TIC_TAC_TOE.git",
     features: [
       "Command-line interface for easy interaction",
       "AI opponent using the Minimax algorithm",
@@ -224,18 +260,18 @@ const projects = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     title: "TasteGlobe - World On Your Plate",
     description:
       "A mobile app that provides recipes from around the world based on ingredients and cuisine type.",
     longDescription:
       "Created a mobile application using Flutter that allows users to explore and discover recipes from various cuisines around the world. The app integrates with the Spoonacular API to fetch recipe details based on user-inputted ingredients or selected cuisine types. It features a user-friendly interface, enabling users to search for recipes, view cooking instructions, and save their favorite dishes for easy access.",
     image: TasteGlobe,
-    technologies: ["Flutter", "Dart", "Provider","Local Storage",],
+    technologies: ["Flutter", "Dart", "Provider", "Local Storage",],
     category: "Mobile",
     status: "Completed",
-    liveUrl:"https://www.linkedin.com/posts/abdullah-rasheed-shiekh_flutter-appdevelopment-learningproject-activity-7224805301533761536-e8q4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEY4BhUBvWPQL7PHg9zu8Iwko0s05P-gifg",
-    githubUrl:"https://github.com/Abdullah-Rasheed-Shiekh/TasteGlobe.git",
+    liveUrl: "https://www.linkedin.com/posts/abdullah-rasheed-shiekh_flutter-appdevelopment-learningproject-activity-7224805301533761536-e8q4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEY4BhUBvWPQL7PHg9zu8Iwko0s05P-gifg",
+    githubUrl: "https://github.com/Abdullah-Rasheed-Shiekh/TasteGlobe.git",
     features: [
       "Recipe discovery from various cuisines",
       "Search by ingredients or cuisine type",
@@ -246,7 +282,7 @@ const projects = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     title: "BudgetBuddy - Personal Finance Tracker",
     description:
       "A mobile app to track expenses, set budgets, and visualize spending patterns.",
@@ -256,8 +292,8 @@ const projects = [
     technologies: ["Flutter", "Dart", "Firebase"],
     category: "Mobile",
     status: "Completed",
-    liveUrl:"https://www.linkedin.com/posts/abdullah-rasheed-shiekh_expensemate-financeapp-flutterdevelopment-activity-7219737155760230400-3_xu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEY4BhUBvWPQL7PHg9zu8Iwko0s05P-gifg",
-    githubUrl:"https://github.com/Abdullah-Rasheed-Shiekh/The-Budget-Buddy.git",
+    liveUrl: "https://www.linkedin.com/posts/abdullah-rasheed-shiekh_expensemate-financeapp-flutterdevelopment-activity-7219737155760230400-3_xu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEY4BhUBvWPQL7PHg9zu8Iwko0s05P-gifg",
+    githubUrl: "https://github.com/Abdullah-Rasheed-Shiekh/The-Budget-Buddy.git",
     features: [
       "Expense tracking and categorization",
       "Budget setting and monitoring",
@@ -269,10 +305,10 @@ const projects = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     title: "Technoverse - Flagship Event ACM Comsats Lahore",
     description:
-    "Contributed to the development of the official website for Technoverse, the flagship event of ACM Comsats Lahore.",
+      "Contributed to the development of the official website for Technoverse, the flagship event of ACM Comsats Lahore.",
     longDescription:
       "Played a key role in developing the official website for Technoverse, the flagship event of ACM Comsats Lahore. The website serves as a central hub for event information, including schedules, speaker details, and registration. It features a modern design and responsive layout to ensure accessibility across devices. The project involved collaboration with a team of developers and designers to create an engaging online presence for the event.",
     image: Technoverse,
@@ -280,7 +316,7 @@ const projects = [
     category: "Web",
     status: "Completed",
     liveUrl: "https://technoverse-cui.netlify.app/",
-    githubUrl:"",
+    githubUrl: "",
     features: [
       "Event information hub with schedules and speaker details",
       "User-friendly registration process",
@@ -291,7 +327,7 @@ const projects = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     title: "ParkPro - Smart Parking Management System",
     description:
       "A web application for managing parking spaces, reservations, and payments.",
@@ -308,22 +344,22 @@ const projects = [
       "Reservation system for users",
       "User-friendly interface",
       "Real-time availability updates",
-      "Membership plans and discounts",      
+      "Membership plans and discounts",
     ],
   },
-  {    
-    id: 14,
+  {
+    id: 15,
     title: "DeepLearningAI Clone - Responsive Website",
     description:
       "A responsive clone of the DeepLearningAI website built with HTML and Bootstrap and JavaScript.",
     longDescription:
       "Created a responsive clone of the DeepLearningAI website using HTML, Bootstrap, and JavaScript. The project involved replicating the design and functionality of the original site, focusing on layout, navigation, and interactive elements. The clone serves as a demonstration of front-end development skills and attention to detail in recreating a professional website.",
     image: DeepLearningAIClone,
-    technologies: ["HTML", "Bootstrap", "JavaScript"," CSS"],
+    technologies: ["HTML", "Bootstrap", "JavaScript", " CSS"],
     category: "Web",
     status: "Completed",
     liveUrl: "https://abdullah-rasheed-shiekh.github.io/DeepLearningAi/",
-    githubUrl:"https://github.com/Abdullah-Rasheed-Shiekh/DeepLearningAi.git",
+    githubUrl: "https://github.com/Abdullah-Rasheed-Shiekh/DeepLearningAi.git",
     features: [
       "Responsive design for various screen sizes",
       "Accurate replication of the original website layout",
@@ -334,7 +370,7 @@ const projects = [
     ],
   },
   {
-    id: 15,
+    id: 16,
     title: "Data Conversion Calculator",
     description:
       "A simple CLI-based calculator for converting between different data units built in C Language.",
@@ -345,7 +381,7 @@ const projects = [
     category: "C Language",
     status: "Completed",
     liveUrl: "https://www.linkedin.com/posts/abdullah-rasheed-shiekh_datatypeconversion-cprogramming-semesterproject-activity-7102578510468182017-rWxc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEY4BhUBvWPQL7PHg9zu8Iwko0s05P-gifg",
-    githubUrl:"https://github.com/Abdullah-Rasheed-Shiekh/DataConversionCalculator.git",
+    githubUrl: "https://github.com/Abdullah-Rasheed-Shiekh/DataConversionCalculator.git",
     features: [
       "Command-line interface for user interaction",
       "Conversion between Decimal, Binary, Octal, and Hexadecimal",
@@ -355,9 +391,10 @@ const projects = [
       "Demonstration of C programming skills",
     ],
   },
+
 ]
 
-const categories = ["All", "Web", "Mobile", "AI/ML","Power BI and Data Visualization", "C Language"]
+const categories = ["All", "Web", "Mobile", "AI/ML", "Power BI and Data Visualization", "C Language"]
 
 export function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All")
@@ -432,7 +469,7 @@ export function Projects() {
                   {/* If a project has preview, only then show the preview button */}
                   {hoveredProject === project.id && (
                     <div className="absolute inset-0 bg-black/80 flex items-center justify-center space-x-4 animate-fade-in">
-                      
+
                       <Button
                         size="sm"
                         variant="secondary"
